@@ -1,0 +1,28 @@
+# Build artifacts
+build/
+*.o
+*.so
+*.a
+*.d
+*.pcm
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# ROOT files
+*.root
+
+# Local PDF plots
+scripts/
+*.pdf
+scripts/Plots
+scripts/Temp
+
+# macOS metadata
+.DS_Store
+# MacOS metadata
+.DS_Store
+
+# Editor backups
+*~

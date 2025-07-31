@@ -1,0 +1,27 @@
+# Open viewer
+/vis/open OGL
+/vis/viewer/set/viewpointThetaPhi 70 20
+/vis/viewer/set/style surface
+/vis/viewer/set/autoRefresh true
+
+# Scene setup
+/vis/scene/create
+/vis/scene/add/volume
+/vis/scene/add/axes 0 0 0 10 cm
+/vis/sceneHandler/attach
+
+# Fix: Set world visibility to 0 (completely invisible)
+# Use the full logical volume name, usually "World" or "logicWorld"
+# Try both if unsure:
+#/vis/geometry/set/visibility World 0
+/vis/geometry/set/visibility logicWorld 0
+
+# Beam tracks & hits
+/tracking/storeTrajectory 1
+/vis/scene/add/trajectories
+/vis/scene/add/hits
+
+# Refresh view
+/vis/viewer/flush
+/vis/viewer/rebuild
+

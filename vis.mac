@@ -1,0 +1,21 @@
+/vis/open OGL #TGS
+/vis/viewer/set/viewpointThetaPhi 70 20
+/vis/drawVolume
+/vis/viewer/set/autoRefresh true
+/vis/scene/add/axes 0 0 0 10 cm
+/vis/sceneHandler/attach
+/vis/geometry/set/forceWireframe logicDriftFR4 true
+#
+#/vis/open OGL
+#/vis/scene/create
+#/vis/scene/add/volume -all
+#/vis/sceneHandler/attach
+#/vis/viewer/set/viewpointThetaPhi 90 0
+#/vis/viewer/set/style surface
+#/vis/viewer/set/autoRefresh true
+#/vis/viewer/zoom 1.2
+#/vis/drawVolume
+
+/vis/scene/add/trajectories smooth
+/vis/modeling/trajectories/drawByCharge
+/vis/scene/add/hits
